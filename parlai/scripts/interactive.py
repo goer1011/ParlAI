@@ -104,7 +104,7 @@ def interactive(opt):
 
     if world_logger is not None:
         # dump world acts to file
-        world_logger.write('HEllo', world, file_format=opt['save_format'])
+        world_logger.write(opt['outfile'], world, file_format=opt['save_format'])
 
 
 @register_script('interactive', aliases=['i'])
